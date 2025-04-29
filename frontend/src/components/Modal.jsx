@@ -24,7 +24,7 @@ export default function Modal({ isOpen, onClose }) {
       setError("Please fill all details!")
       return;
     }
-    const resp = await fetch('http://localhost:4000/api/jobs/',{
+    const resp = await fetch('https://my-projects-1-lsja.onrender.com/api/jobs/',{
       method:"POST",
       body  :JSON.stringify(job),
       headers : {"Content-Type":"application/json"}
